@@ -10,3 +10,13 @@ Cypress.Commands.add("login", () => {
     "https://kind-gray-bluefish-tie.cyclic.app/login"
   );
 });
+
+// describe("Appointment test case", () => {
+//   beforeEach(() => {
+//     cy.login();
+//   });
+
+//   it("makes appointments", () => {
+//     // Your appointment test code here
+//   });
+// });
