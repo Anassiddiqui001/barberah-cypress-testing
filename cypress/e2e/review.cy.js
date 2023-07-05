@@ -12,7 +12,6 @@ describe("Review Test Case", () => {
 
   it("give review", () => {
     /* ==== Generated with Cypress Studio ==== */
-
     cy.get(".text-2xl").should(
       "have.text",
       "Submit Your Review For Alex Barber Barber "
