@@ -12,7 +12,7 @@ describe("Create Salon By Admin", () => {
     /* ==== Generated with Cypress Studio ==== */
 
     cy.get('[href="/salonowner/salon"] > p').click();
-    cy.get("#salonname").type("BBB Salon");
+    cy.get("#salonname").type("CCC Salon");
     cy.get("#timings").type("10am-12pm");
     cy.get("#location").type("Saadi Town");
     // cy.get(":nth-child(5) > .input").attachFile("salon.jpg");
