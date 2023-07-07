@@ -1,5 +1,5 @@
 import "cypress-file-upload";
-describe("Create Salon By Admin", () => {
+describe("Verify Create Salon By Admin", () => {
   beforeEach(() => {
     cy.login();
     // ==========
@@ -12,11 +12,13 @@ describe("Create Salon By Admin", () => {
     /* ==== Generated with Cypress Studio ==== */
 
     cy.get('[href="/salonowner/salons"] > p').click();
-    cy.get('[data-value="MNOP Salon"]').should("have.text", "MNOP Salon");
+    cy.get('[data-value="DDD Salon"]').should("have.text", "DDD Salon");
     cy.get(
-      '[data-id="64a4f2b8a25498001cb6b0e8"] > [data-value="10am-12pm"]'
+      '[data-id="64a79d72844ac00031a70524"] > [data-value="10am-12pm"]'
     ).should("have.text", "10am-12pm");
-    cy.get('[data-value="Saadi Town"]').should("have.text", "Saadi Town");
+    cy.get(
+      '[data-id="64a79d72844ac00031a70524"] > [data-value="Saadi Town"]'
+    ).should("have.text", "Saadi Town");
     /* ==== End Cypress Studio ==== */
   });
 });

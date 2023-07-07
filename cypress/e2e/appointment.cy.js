@@ -1,7 +1,6 @@
 describe("Appointment test case", () => {
   beforeEach(() => {
     cy.login();
-    // ==========
     cy.get(
       '[href="/specificSalon/62d295a85a61c523c04a085b/Alpha Barbers"] > .my-4 > .card > .btn > .fancy > .text'
     ).click();
@@ -10,17 +9,11 @@ describe("Appointment test case", () => {
     ).click();
   });
 
-  /* ==== Test Created with Cypress Studio ==== */
   it("makes an appointment", function () {
     /* ==== Generated with Cypress Studio ==== */
 
     cy.get(":nth-child(2) > .border").should("have.value", "bravo");
     cy.get(":nth-child(3) > .border").should("have.value", "Alex Barber");
-    // cy.get(".px-7 > :nth-child(4) > .border").should(
-    //   "have.value",
-    //   "Alpha Barbers"
-    // );
-
     cy.get(":nth-child(5) > .border").type("2023-07-05");
     cy.get(":nth-child(5) > .border").click();
     cy.get(":nth-child(6) > .border").select("500");

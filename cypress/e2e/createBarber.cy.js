@@ -1,5 +1,5 @@
 import "cypress-file-upload";
-describe("Create Barber  Test Case", () => {
+describe("Create Barber By Admin", () => {
   beforeEach(() => {
     cy.login();
     // ===========
@@ -11,7 +11,7 @@ describe("Create Barber  Test Case", () => {
     /* ==== Generated with Cypress Studio ==== */
 
     cy.get('[href="/salonowner/barber"] > p').click();
-    cy.get("#barbername").type("OOO Barber");
+    cy.get("#barbername").type("MMM Barber");
     cy.get("#worksat").type("ABCD Salon");
     cy.get("#timings").type("1pm-6pm");
     cy.get("#experience").type("5");
